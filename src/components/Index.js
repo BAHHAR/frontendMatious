@@ -16,25 +16,25 @@ function Index() {
     const [res3, setres3] = useState({})
     const [res4, setres4] = useState([])
 
-    
+
     const getGrossVolumeParProduct=()=>{
-        axios.get("http://localhost:5000/ProductsLine")
+        axios.get("https://entretien-matious-backend.vercel.app/ProductsLine")
             .then((data)=>setres(data.data))
     }
     const getAchatParType=()=>{
-        axios.get("http://localhost:5000/TotalAchatParType")
+        axios.get("https://entretien-matious-backend.vercel.app/TotalAchatParType")
             .then((data)=>setres1(data.data))
     }
     const getMoyenneDeRatingParSexe=()=>{
-        axios.get("http://localhost:5000/MoyenneRatingParGender")
+        axios.get("https://entretien-matious-backend.vercel.app/MoyenneRatingParGender")
             .then((data)=>setres2(data.data))
     }
     const getMiscellaneous=()=>{
-        axios.get("http://localhost:5000/Miscellaneous")
+        axios.get("https://entretien-matious-backend.vercel.app/Miscellaneous")
             .then((data)=>setres3(data.data))
     }
     const getCityParTypeCustomer=()=>{
-        axios.get("http://localhost:5000/CityParTypeCustomer")
+        axios.get("https://entretien-matious-backend.vercel.app/CityParTypeCustomer")
             .then((data)=>setres4(data.data))
     }
     useEffect(() => {
