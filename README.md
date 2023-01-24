@@ -8,4 +8,4 @@
 
 > npm start
 
-Ouvrez http: // localhost: 3000 pour le voir dans votre navigateur.
+Ouvrez http://localhost:3000 pour le voir dans votre navigateur.
