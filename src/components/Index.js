@@ -4,7 +4,7 @@ import GrossVolumeParProduct from './Charts/GrossVolumeParProduct'
 import MoyenneDeRatingParSexe from './Charts/MoyenneDeRatingParSexe'
 import HeaderCards from './layout/HeaderCards'
 
-import CityParTypeCustomer from './Charts/CityParTypeCustomer'
+import CityParTypeProduit from './Charts/CityParTypeProduit'
 
 
 
@@ -32,7 +32,7 @@ function Index() {
                 </div>
                 <div className='bodyCard card  p-3 '>
                     {/* afficher la charte qui visualise la ville par type de client */}
-                    <CityParTypeCustomer/>
+                    <CityParTypeProduit/>
                 </div>
             </div>
         </div>  

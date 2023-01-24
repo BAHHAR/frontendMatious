@@ -1,16 +1,16 @@
 import React,{useState,useEffect}  from 'react'
 import { Column } from '@ant-design/plots';
-import GetCityParTypeCustomerService from '../../Services/CityParTypeCustomer.service';
+import GetCityParTypeProduitService from '../../Services/CityParTypeCustomer.service';
 import {Spin} from 'antd'
 
-function CityParTypeCustomer() {
+function CityParTypeProduit() {
    // variable d'état pour stocker les données du serveur backend
     const [data, setdata] = useState([])
 
     // utilisation du hook useEffect pour récupérer les données du serveur backend lorsque le composant est monté
     useEffect(() => {
        // fonction asynchrone pour récupérer les données et mettre à jour l'état
-      const result=async()=>setdata(await GetCityParTypeCustomerService());
+      const result=async()=>setdata(await GetCityParTypeProduitService());
       result()
     }, [])
     
@@ -57,4 +57,4 @@ function CityParTypeCustomer() {
 
 }
 
-export default CityParTypeCustomer
+export default CityParTypeProduit
