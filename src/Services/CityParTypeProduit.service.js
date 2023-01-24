@@ -13,4 +13,4 @@ const GetCityParTypeProduitService=async()=>{
 }
 
 // Exporte la fonction GetCityParTypeProduitService pour son utilisation dans d'autres fichiers
-export default CityParTypeProduitService;
+export default GetCityParTypeProduitService;
