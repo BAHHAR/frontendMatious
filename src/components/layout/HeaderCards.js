@@ -1,13 +1,36 @@
-import React from 'react'
+import React,{useState,useEffect}  from 'react'
 import {
     PeopleFill,
     StarFill,
     GenderMale,
     GenderFemale
 } from 'react-bootstrap-icons'
+import {Spin} from 'antd'
+import GetMiscellaneousService from '../../Services/Miscellaneous.service'
 
-function HeaderCards(res) {
-    const {TotalCostumers,RateFemales,RateMales,avg}=res.res
+function HeaderCards() {
+    const [data, setdata] = useState({})
+    const {TotalCostumers,RateFemales,RateMales,avg}=data
+    console.log(data)
+
+    useEffect(async() => {
+      const result=await GetMiscellaneousService();
+      setdata(result)
+    }, [])
+    
+
+    if(typeof data === "undefined") 
+            return <div className='MySpin'>
+                        <Spin  size="large" >
+                            <div className='pb-5'/>
+                            <div className='text-primary container pt-5'>
+                                <h3>Loading</h3>
+                            </div>
+                        </Spin>
+                    </div> 
+
+
+
   return (
     <div className='cardsHeaders'>
         <div className='cardsHeaders_card card '>

@@ -85,6 +85,26 @@ body{
   border-left: 4px rgb(38, 166, 154) solid;
 }
 
+.uploadForm{
+  box-shadow: -4px 10px 15px -3px rgba(0,0,0,0.1);
+  border: none !important;
+  width: fit-content !important;
+}
+
+
+
+.uploadForm_div{
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.uploadForm_div input{
+  box-shadow: -4px 4px 18px -3px rgba(0,0,0,0.3);
+  
+}
+
 .MySpin{
   display: block;
   position: absolute;
@@ -166,3 +186,5 @@ body{
     text-align: center;
   }
 }
+
+
