@@ -1,6 +1,6 @@
 import React,{useState,useEffect}  from 'react'
 import { Column } from '@ant-design/plots';
-import GetCityParTypeProduitService from '../../Services/CityParTypeCustomer.service';
+import GetCityParTypeProduitService from '../../Services/CityParTypeProduit.service';
 import {Spin} from 'antd'
 
 function CityParTypeProduit() {
